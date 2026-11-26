@@ -1,0 +1,720 @@
+# The single source of truth for the graveyard.
+# Edit this file, then run:  python scripts/build.py
+# It regenerates README.md, README.zh-CN.md and every image under docs/assets/.
+#
+# status:  declared | dying | alive
+# kinds:   Manifesto | Protocol | Demo | Counter | Critique | Commentary
+
+updated: "2026-11"
+
+plots:
+  - id: knowledge
+    numeral: "I"
+    name: Plot of Knowledge
+    name_zh: 知识之园
+    motto: Where we kept what we knew.
+    motto_zh: 我们存放所知之物的地方。
+    stones: ["001", "002", "003", "004", "005", "006"]
+  - id: building
+    numeral: "II"
+    name: Plot of Building
+    name_zh: 建造之园
+    motto: Where we kept what we made work.
+    motto_zh: 我们存放亲手造出之物的地方。
+    stones: ["007", "008", "009", "010", "011"]
+  - id: culture
+    numeral: "III"
+    name: Plot of Culture
+    name_zh: 文化之园
+    motto: Where we kept what moved us.
+    motto_zh: 我们存放曾打动自己之物的地方。
+    stones: ["012", "013", "014", "015", "016"]
+  - id: care
+    numeral: "IV"
+    name: Plot of Care & Institutions
+    name_zh: 照护与制度之园
+    motto: Where we kept the people we trusted.
+    motto_zh: 我们存放所信任之人的地方。
+    stones: ["017", "018", "019", "020"]
+
+tombstones:
+  - id: "001"
+    slug: paper
+    name: The Research Paper
+    name_zh: 论文
+    since_year: 1665
+    since: "1665"
+    origin: "with the first issue of *Philosophical Transactions*"
+    origin_zh: "随《哲学汇刊》创刊而生"
+    status: declared
+    by: The Last Human-Written Paper
+    by_zh: The Last Human-Written Paper
+    successor: Agent-native research artifacts
+    successor_zh: 面向智能体的研究制品
+    epitaph: It held three centuries of science in eight pages, and left out every failed experiment.
+    epitaph_zh: 它把三百年的科学装进八页纸，却删去了每一次失败的实验。
+    entries:
+      - title: "The Last Human-Written Paper: Agent-Native Research Artifacts"
+        url: https://arxiv.org/abs/2604.24658
+        kinds: [Manifesto, Protocol]
+        date: "2026-04"
+        note: Replaces the narrative PDF with an executable research package that keeps dead ends, design decisions and full implementation detail.
+        note_zh: 用可执行的研究包取代叙事式 PDF，保留死胡同、设计决策和完整实现细节。
+        links: {code: https://github.com/ARA-Labs/Agent-Native-Research-Artifact, template: https://github.com/Orchestra-Research/Agent-Native-Research-Artifact-template, demo: https://github.com/ARA-Labs/ARA-Demo}
+      - title: The AI Scientist-v2
+        url: https://www.nature.com/articles/s41586-026-10265-5
+        kinds: [Demo]
+        date: "2026"
+        note: Its fully AI-generated paper passed peer review at an ICLR 2025 workshop; the system itself was published in Nature.
+        note_zh: 它完全由 AI 生成的论文通过了 ICLR 2025 研讨会的同行评审，系统本身发表在 Nature。
+        links: {x: https://x.com/SakanaAILabs/status/2036840833690071450}
+      - title: Agents4Science 2025
+        url: https://agents4science.stanford.edu
+        kinds: [Demo]
+        date: "2025-10"
+        note: The first conference where AI systems are both the primary authors and the reviewers.
+        note_zh: 第一个由 AI 系统同时担任第一作者和审稿人的会议。
+        links: {report: https://arxiv.org/abs/2511.15534, x: https://x.com/james_y_zou/status/2001331557643276613}
+      - title: paper.json
+        url: https://arxiv.org/abs/2605.16194
+        kinds: [Protocol]
+        date: "2026-05"
+        note: A companion file that travels with the PDF, giving every claim a stable ID and an explicit “does-not-claim” list for agent readers.
+        note_zh: 随 PDF 一起分发的伴随文件，为每条主张分配稳定 ID，并为智能体读者列出“不主张”清单。
+        links: {code: https://github.com/arquicanedo/paper-json}
+      - title: Agentic Publication Protocol (APP)
+        url: https://arxiv.org/abs/2606.27386
+        kinds: [Protocol]
+        date: "2026-06"
+        note: Ships a paper as a repository release, with code, data, environment and an agent-facing instruction file.
+        note_zh: 把论文作为一次仓库发布，附带代码、数据、环境和面向智能体的说明文件。
+      - title: "Traxia: Verifiable, Agent-Native Scientific Publishing"
+        url: https://arxiv.org/abs/2606.08256
+        kinds: [Protocol]
+        date: "2026-06"
+      - title: "Knows: Agent-Native Structured Research Representations"
+        url: https://arxiv.org/abs/2604.17309
+        kinds: [Protocol]
+        date: "2026-04"
+      - title: "Rethinking Publication: A Certification Framework for AI-Enabled Research"
+        url: https://arxiv.org/abs/2604.22026
+        kinds: [Protocol]
+        date: "2026-04"
+        note: Separates judging the knowledge from grading the human contribution, so pipeline-generated work can be published consistently.
+        note_zh: 把“评判知识”与“评定人类贡献”分开，让流水线生成的研究也能被一致地发表。
+      - title: The Scientific Paper as a Human Artifact
+        url: https://www.preprints.org/manuscript/202609.2371
+        kinds: [Critique]
+        date: "2026-09"
+        note: The paper is not obsolete, but its monopoly is ending; its human-facing functions must be kept on purpose.
+        note_zh: 论文并未过时，但它的垄断正在结束；它面向人的功能需要被有意保留。
+      - title: Should Researchers Write Papers for AI Instead of People?
+        source: IEEE Spectrum
+        url: https://spectrum.ieee.org/ai-scientist-research-paper-format
+        kinds: [Commentary]
+        date: "2026"
+      - title: Again, the research paper format will be dying out
+        source: Marginal Revolution
+        url: https://marginalrevolution.com/marginalrevolution/2026/06/again-the-paper-format-will-be-dying-out.html
+        kinds: [Commentary]
+        date: "2026-06"
+      - title: The Last Human-Written Paper
+        source: Towards AI
+        url: https://pub.towardsai.net/the-last-human-written-paper-a14d29470ff7
+        kinds: [Critique]
+        date: "2026"
+        note: Calls the title an overclaim; the approach mainly fits code-based research.
+        note_zh: 认为标题言过其实，这一方案主要适用于以代码为主的研究。
+
+  - id: "002"
+    slug: peer-review
+    name: Peer Review
+    name_zh: 同行评审
+    since_year: 1731
+    since: "1731"
+    origin: "with the refereed *Medical Essays* of the Royal Society of Edinburgh"
+    origin_zh: "随爱丁堡皇家学会经同行审阅的《医学论文集》而生"
+    status: alive
+    by: AI review at conference scale
+    by_zh: 会议规模的 AI 审稿
+    successor: Defended by the ML community itself
+    successor_zh: 由机器学习社区自己守护
+    epitaph: Still reading the paper. Still asking for one more ablation.
+    epitaph_zh: 还在读这篇论文，还在要求再补一个消融实验。
+    entries:
+      - title: AAAI-26 AI Review Pilot
+        url: https://arxiv.org/abs/2604.13940
+        kinds: [Demo]
+        date: "2026-04"
+        note: AI-written reviews for every submission at under $1 per paper; respondents preferred them on technical accuracy.
+        note_zh: 为每篇投稿生成 AI 审稿意见，每篇成本不到 1 美元；受访者在技术准确性上更偏好 AI 审稿。
+      - title: "Position: Stop Automating Peer Review Without Rigorous Evaluation"
+        source: ICML 2026
+        url: https://proceedings.mlr.press/v306/baumann26a.html
+        kinds: [Critique]
+        date: "2026"
+
+  - id: "003"
+    slug: proof
+    name: The Written Proof
+    name_zh: 手写的证明
+    since_year: -300
+    since: "c. 300 BC"
+    origin: "in Euclid’s *Elements*"
+    origin_zh: "生于欧几里得的《几何原本》"
+    status: alive
+    by: Agents writing machine-checked proofs
+    by_zh: 写出机器可验证证明的智能体
+    successor: Lean as the arbiter
+    successor_zh: 由 Lean 来裁决
+    epitaph: Fermat’s margin was too small. The machine’s was not.
+    epitaph_zh: 费马的页边太窄，机器的没有。
+    entries:
+      - title: Fermat’s Last Theorem in Lean 4
+        url: https://github.com/anthropics/fermats-last-theorem
+        kinds: [Demo]
+        date: "2026"
+        note: A complete machine-checked proof; the Lean sources were produced by AI agents building on human-written open-source Lean.
+        note_zh: 完整的机器验证证明；Lean 源码由 AI 智能体在人类编写的开源 Lean 基础上生成。
+        links: {blog: https://www.anthropic.com/research/formalizing-fermats-last-theorem, x: https://x.com/AnthropicAI/status/2095947707605266436}
+      - title: Advancing Mathematics Research with AI-Driven Formal Proof Search
+        url: https://arxiv.org/abs/2605.22763
+        kinds: [Demo]
+        date: "2026-05"
+        note: An agent autonomously resolved 9 of 353 open Erdős problems.
+        note_zh: 一个智能体自主解决了 353 个公开 Erdős 问题中的 9 个。
+      - title: "Erdős Problem #728"
+        url: https://arxiv.org/abs/2601.07421
+        kinds: [Demo]
+        date: "2026-01"
+        note: The first Erdős problem recognised as solved autonomously by AI.
+        note_zh: 第一个被公认由 AI 自主解决的 Erdős 问题。
+
+  - id: "004"
+    slug: exam
+    name: The Exam
+    name_zh: 考试
+    since_year: 605
+    since: "605"
+    origin: "with the imperial examinations of the Sui dynasty"
+    origin_zh: "随隋代科举而生"
+    status: declared
+    by: Humanity’s Last Exam · The Last Math Competition
+    by_zh: Humanity’s Last Exam · The Last Math Competition
+    successor: Open problems as the benchmark
+    successor_zh: 以未解难题为基准
+    epitaph: Set by humans, to be the last thing machines could not pass.
+    epitaph_zh: 由人类出题，本该是机器最后过不去的一关。
+    entries:
+      - title: The Last Math Competition
+        url: https://github.com/The-Last-Math-Competition/The-Last-Math-Competition
+        kinds: [Manifesto, Demo]
+        date: "2026"
+        note: “Possibly the last mathematics competition humanity will ever hold”. 10,000 conjectures; every solution is a pull request with LaTeX and a sorry-free Lean 4 project. 1,071 solved as of 2026-11.
+        note_zh: “也许是人类举办的最后一场数学竞赛”。10,000 个猜想，每份解答都是附带 LaTeX 和无 sorry 的 Lean 4 项目的 PR；截至 2026-11 已解决 1,071 个。
+      - title: Humanity’s Last Exam
+        url: https://arxiv.org/abs/2501.14249
+        kinds: [Manifesto]
+        date: "2025-01"
+        note: The precursor of the naming pattern. Expert-written questions positioned as the final closed-ended academic exam for AI.
+        note_zh: 这一命名方式的先驱：由专家出题，定位为 AI 的最后一场封闭式学术考试。
+        links: {site: https://lastexam.ai, x: https://x.com/danhendrycks/status/1882433928407241155}
+
+  - id: "005"
+    slug: textbook
+    name: The Textbook
+    name_zh: 教科书
+    since_year: 1658
+    since: "1658"
+    origin: "with Comenius’s *Orbis Pictus*"
+    origin_zh: "随夸美纽斯的《世界图解》而生"
+    status: declared
+    by: Humanity’s Last Math Book
+    by_zh: 人类最后一本数理基础书
+    successor: A textbook that rewrites itself around readers’ questions
+    successor_zh: 围绕读者提问不断重写自己的教科书
+    epitaph: Printed once. Revised every few years. Read by no one twice.
+    epitaph_zh: 印一次，几年改一版，没有人读第二遍。
+    entries:
+      - title: Humanity’s Last Math Book · 人类最后一本数理基础书
+        url: https://github.com/niuniu-869/humanitys-last-math-book
+        kinds: [Manifesto, Demo]
+        date: "2026"
+        note: An open textbook from secondary-school maths to understanding large models, revised continuously in response to reader questions.
+        note_zh: 从中学数学一直讲到理解大模型的开源教材，根据读者提问持续修订。
+
+  - id: "006"
+    slug: encyclopedia
+    name: The Volunteer Encyclopedia
+    name_zh: 志愿者的百科全书
+    since_year: 2001
+    since: "2001"
+    origin: "with the first edit to Wikipedia"
+    origin_zh: "随维基百科的第一次编辑而生"
+    status: alive
+    by: A fully AI-written encyclopedia
+    by_zh: 完全由 AI 写成的百科全书
+    successor: Defended by the evidence that it was copied from the original
+    successor_zh: 证据显示它抄自原版
+    epitaph: Written by strangers, for strangers, for free.
+    epitaph_zh: 由陌生人写给陌生人，分文不取。
+    entries:
+      - title: Grokipedia
+        url: https://grokipedia.com
+        kinds: [Demo, Critique]
+        date: "2025-10"
+        note: Launched with roughly 885k AI-written articles; an independent analysis finds much of it derived from Wikipedia.
+        note_zh: 上线时约有 88.5 万篇 AI 撰写的条目；独立分析发现其中大量内容源自维基百科。
+        links: {analysis: https://arxiv.org/abs/2511.09685}
+
+  - id: "007"
+    slug: code
+    name: Hand-Written Code
+    name_zh: 手写的代码
+    since_year: 1843
+    since: "1843"
+    origin: "in Ada Lovelace’s Note G"
+    origin_zh: "生于阿达·洛芙莱斯的“注释 G”"
+    status: dying
+    by: Last Human Commit · The Last Harness
+    by_zh: Last Human Commit · The Last Harness
+    successor: Agents, with a human who still signs off
+    successor_zh: 智能体，外加一个仍要签字的人
+    epitaph: Typed one character at a time, for seventy years.
+    epitaph_zh: 七十年来，一个字符一个字符地敲出来。
+    entries:
+      - title: Last Human Commit
+        url: https://github.com/megamen32/LastHumanCommit
+        kinds: [Demo]
+        date: "2026"
+        note: An automatic engineering workflow that takes a rough request, even a voice transcript, all the way to a tested, merged change.
+        note_zh: 自动化工程流程：从一句粗糙的需求（甚至语音转写）一路做到测试通过并合并的改动。
+      - title: The Last Harness
+        url: https://github.com/diegopetrucci/the-last-harness
+        kinds: [Manifesto]
+        date: "2026"
+        note: “The last harness you’ll ever need”, built on one line — you can outsource your thinking, but not your understanding.
+        note_zh: “你需要的最后一个 harness”，核心信条是：思考可以外包，理解不能。
+      - title: The Last Human
+        url: https://github.com/microsoft-2026-hackathon/the-last-human
+        kinds: [Counter]
+        date: "2026"
+        note: A human checkpoint. Before a risky agent-written PR merges, its author must explain the change from the code.
+        note_zh: 一道人工关卡：高风险的智能体 PR 合并前，作者必须对照代码讲清楚这次改动。
+
+  - id: "008"
+    slug: ai
+    name: Human-Built AI
+    name_zh: 人类构建的 AI
+    since_year: 1956
+    since: "1956"
+    origin: "at the Dartmouth workshop"
+    origin_zh: "生于达特茅斯会议"
+    status: declared
+    by: The Last AI Built by Humans
+    by_zh: The Last AI Built by Humans
+    successor: Recursive self-improvement
+    successor_zh: 递归式自我改进
+    epitaph: Trained, tuned and shipped by the people it would replace.
+    epitaph_zh: 由它将要取代的人训练、调优、发布。
+    entries:
+      - title: "The Last AI Built by Humans: Toward Genuine Recursive Self-Improvement"
+        url: https://arxiv.org/abs/2609.11873
+        kinds: [Manifesto]
+        date: "2026-09"
+        links: {x: https://x.com/askalphaxiv/status/2099090716186038640}
+      - title: When AI Builds Itself
+        source: Anthropic Institute
+        url: https://www.anthropic.com/institute/recursive-self-improvement
+        kinds: [Demo]
+        date: "2026-06"
+        note: More than 80% of the code merged at Anthropic is written by Claude.
+        note_zh: Anthropic 合并的代码中，超过 80% 由 Claude 编写。
+        links: {x: https://x.com/AnthropicAI/status/2062568862479208923}
+  - id: "009"
+    slug: company
+    name: The Company
+    name_zh: 公司
+    since_year: 1602
+    since: "1602"
+    origin: "with the Dutch East India Company"
+    origin_zh: "随荷兰东印度公司而生"
+    status: declared
+    by: "MiniCorp: The Last Mile"
+    by_zh: "MiniCorp: The Last Mile"
+    successor: Companies of agents
+    successor_zh: 由智能体组成的公司
+    epitaph: It once needed a person at every desk.
+    epitaph_zh: 它曾经需要每张桌子后面都坐着一个人。
+    entries:
+      - title: "MiniCorp: The Last Mile to an AI Agent Corporation"
+        url: https://arxiv.org/abs/2610.05912
+        kinds: [Manifesto, Demo]
+        date: "2026-10"
+      - title: Project Vend
+        source: Anthropic × Andon Labs
+        url: https://www.anthropic.com/news/project-vend-2
+        kinds: [Demo]
+        date: "2025"
+        note: Claude runs a small office shop — stock, prices, customers. In its second phase the shop turned a profit.
+        note_zh: Claude 经营一家办公室小店，负责进货、定价和顾客；第二阶段开始盈利。
+        links: {x: https://x.com/AnthropicAI/status/2001686747185394148}
+  - id: "010"
+    slug: app
+    name: The App
+    name_zh: 应用程序
+    since_year: 2008
+    since: "2008"
+    origin: "with the App Store"
+    origin_zh: "随 App Store 而生"
+    status: declared
+    by: The End of Apps
+    by_zh: The End of Apps
+    successor: Interfaces generated per user, per moment
+    successor_zh: 按人、按时生成的界面
+    epitaph: Designed once, for everyone, and the same for all of them.
+    epitaph_zh: 只设计一次，给所有人，对每个人都一样。
+    entries:
+      - title: The End of Apps
+        source: AI Engineer Europe 2026
+        url: https://ai.engineer/talks/the-end-of-apps
+        kinds: [Manifesto]
+        date: "2026"
+
+  - id: "011"
+    slug: slides
+    name: The Slide Deck
+    name_zh: 幻灯片
+    since_year: 1987
+    since: "1987"
+    origin: "with PowerPoint"
+    origin_zh: "随 PowerPoint 而生"
+    status: declared
+    by: The Last Boring Slide · The Last Default Slide
+    by_zh: The Last Boring Slide · The Last Default Slide
+    successor: Generated, interactive web presentations
+    successor_zh: 生成式、可交互的网页演示
+    epitaph: Next slide, please.
+    epitaph_zh: 请翻下一页。
+    entries:
+      - title: The Last Boring Slide
+        url: https://claude.ai/artifact/Cy2d8Vn63CnzCtonA1LSah
+        kinds: [Manifesto, Demo]
+        date: "2026-11"
+        note: A talk on the intelligence explosion that opens as a dull default slide, then starts editing itself. Posted by Nikita (@fluxxrider), who says Claude made it from a single prompt; the post passed six million views within a day.
+        note_zh: 一场关于智能爆炸的演讲：开场是一张平淡的默认幻灯片，随后开始自我改写。由 Nikita（@fluxxrider）发布，他称这是 Claude 根据一句提示词做出的；帖子一天内浏览量超过六百万。
+        links: {x: https://x.com/fluxxrider/status/2125622238481371372}
+      - title: The Last Default Slide
+        url: https://fibonacciai.github.io/last-default-slide/
+        kinds: [Demo]
+        date: "2026"
+        note: A live, interactive walk through the last four weeks of AI, maths and science.
+        note_zh: 一份实时、可交互的演示，回顾最近四周的 AI、数学与科学进展。
+        links: {code: https://github.com/FibonacciAi/last-default-slide}
+
+  - id: "012"
+    slug: film
+    name: The Film
+    name_zh: 电影
+    since_year: 1895
+    since: "1895"
+    origin: "at the Lumière brothers’ first public screening"
+    origin_zh: "生于卢米埃尔兄弟的第一次公开放映"
+    status: declared
+    by: The Last Screenwriter
+    by_zh: The Last Screenwriter
+    successor: Features generated shot by shot
+    successor_zh: 逐镜头生成的长片
+    epitaph: "Lights, camera, action: all three now optional."
+    epitaph_zh: 灯光、摄影、开拍，如今三样都可有可无。
+    entries:
+      - title: The Last Screenwriter
+        url: https://en.wikipedia.org/wiki/The_Last_Screenwriter
+        kinds: [Manifesto, Demo]
+        date: "2024-06"
+        note: A Swiss feature whose screenplay was written by ChatGPT-4, about a screenwriter confronted by an AI that writes scripts.
+        note_zh: 一部剧本由 ChatGPT-4 写成的瑞士长片，讲述一位编剧遭遇会写剧本的 AI。
+      - title: Gods Don’t Give Gifts
+        url: https://futurism.com/artificial-intelligence/first-fully-ai-movie-mpa-academy-award
+        kinds: [Demo]
+        date: "2026-12"
+        note: A fully AI-generated feature, rated R by the MPA, opening in US cinemas in December 2026.
+        note_zh: 完全由 AI 生成的长片，获 MPA R 级评级，2026 年 12 月在美国院线上映。
+      - title: Sanxingdui — Future Past · 三星堆：未来启示录
+        url: https://technode.com/2026/09/28/chinas-first-ai-produced-theatrical-film-sets-october-23-release/
+        kinds: [Demo]
+        date: "2026-10"
+        note: An AI-produced feature from Bona Film Group, released in Chinese cinemas.
+        note_zh: 博纳影业出品的 AI 制作长片，在中国院线上映。
+      - title: Dreams of Violets
+        url: https://www.thewrap.com/creative-content/movies/ai-movie-trailer-dreams-of-violets-iran-tribeca/
+        kinds: [Demo]
+        date: "2026-06"
+        note: Shown at Tribeca 2026 as a fully AI-generated live-action feature.
+        note_zh: 在 2026 年翠贝卡电影节放映的全 AI 生成真人风格长片。
+
+  - id: "013"
+    slug: song
+    name: The Recorded Song
+    name_zh: 录制的歌
+    since_year: 1877
+    since: "1877"
+    origin: "on Edison’s phonograph"
+    origin_zh: "生于爱迪生的留声机"
+    status: alive
+    by: AI acts on the Billboard charts
+    by_zh: 登上 Billboard 榜单的 AI 歌手
+    successor: Not yet the norm
+    successor_zh: 尚未成为主流
+    epitaph: Sung by someone who had to breathe between the lines.
+    epitaph_zh: 唱它的人，得在两句之间换气。
+    entries:
+      - title: Breaking Rust · Xania Monet
+        source: Billboard
+        url: https://www.billboard.com/pro/ai-music-artists-charts-popular/
+        kinds: [Demo]
+        date: "2025-11"
+        note: An AI act reaches No. 1 on Billboard’s Country Digital Song Sales; another enters a Billboard radio chart.
+        note_zh: 一位 AI 歌手登上 Billboard 乡村数字单曲销量榜首，另一位进入 Billboard 电台榜。
+
+  - id: "014"
+    slug: newspaper
+    name: The Newspaper
+    name_zh: 报纸
+    since_year: 1605
+    since: "1605"
+    origin: "with the *Relation* of Strasbourg"
+    origin_zh: "随斯特拉斯堡的《通告》而生"
+    status: alive
+    by: A print edition written entirely by AI
+    by_zh: 完全由 AI 写成的印刷版
+    successor: Not yet the norm
+    successor_zh: 尚未成为主流
+    epitaph: Filed before midnight, by someone who was there.
+    epitaph_zh: 午夜前交稿，写稿的人当时就在现场。
+    entries:
+      - title: Il Foglio AI
+        url: https://www.ilfoglio.it/il-foglio-ai/2025/03/22/news/a-first-assessment-of-foglio-ai-written-by-foglio-ai-with-a-scolding--7547053/
+        kinds: [Demo]
+        date: "2025-03"
+        note: For a month, an Italian daily shipped a four-page insert written entirely by AI — articles, headlines, quotes, summaries, even letters to the editor. Journalists wrote only the prompts.
+        note_zh: 一家意大利日报连续一个月随报附送四版完全由 AI 写成的增刊，文章、标题、引语、摘要乃至读者来信都由 AI 完成，记者只负责写提示词。
+
+  - id: "015"
+    slug: translation
+    name: Translation
+    name_zh: 翻译
+    since_year: -250
+    since: "c. 250 BC"
+    origin: "with the Septuagint"
+    origin_zh: "随《七十士译本》而生"
+    status: dying
+    by: Duolingo’s “AI-first” memo
+    by_zh: Duolingo 的 “AI-first” 内部信
+    successor: Machine translation and synthetic voices, at company scale
+    successor_zh: 公司规模的机器翻译与合成语音
+    epitaph: Between two languages there used to stand a person.
+    epitaph_zh: 两种语言之间，曾经站着一个人。
+    entries:
+      - title: Duolingo goes “AI-first”
+        source: The Register
+        url: https://www.theregister.com/2025/04/29/duolingo_ceo_ai_first_shift
+        kinds: [Manifesto]
+        date: "2025-04"
+        note: The CEO’s memo — gradually stop using contractors for work AI can handle, accepting “small hits on quality”.
+        note_zh: CEO 内部信：逐步停止让外包承担 AI 能做的工作，并接受“质量上的小损失”。
+
+  - id: "016"
+    slug: art
+    name: The Painting
+    name_zh: 绘画
+    since_year: -40000
+    since: "c. 40,000 BC"
+    origin: "on the walls of caves"
+    origin_zh: "生于洞穴的岩壁"
+    status: alive
+    by: AI art at a major auction house
+    by_zh: 进入大型拍卖行的 AI 艺术
+    successor: Not yet the norm
+    successor_zh: 尚未成为主流
+    epitaph: Signed in the corner.
+    epitaph_zh: 角落里有一个签名。
+    entries:
+      - title: Augmented Intelligence
+        source: Christie’s
+        url: https://www.theartnewspaper.com/2025/03/05/christies-augmented-intelligence-sale
+        kinds: [Demo]
+        date: "2025-03"
+        note: The first AI-dedicated sale at a major auction house, totalling $728,784.
+        note_zh: 大型拍卖行的第一场 AI 艺术专场，总成交额 728,784 美元。
+
+  - id: "017"
+    slug: teacher
+    name: The Teacher
+    name_zh: 老师
+    since_year: -2000
+    since: "c. 2000 BC"
+    origin: "in the tablet houses of Sumer"
+    origin_zh: "生于苏美尔的泥板书舍"
+    status: alive
+    by: AI tutors with human “guides”
+    by_zh: AI 导师加人类“向导”
+    successor: Not yet the norm
+    successor_zh: 尚未成为主流
+    epitaph: Knew every name in the room.
+    epitaph_zh: 记得教室里每一个人的名字。
+    entries:
+      - title: Alpha School
+        source: Axios
+        url: https://axios.com/2026/08/02/alpha-schools-ai-expansion-50-campuses
+        kinds: [Demo]
+        date: "2026-08"
+        note: Two hours a day of AI-tutored academics, with adults as guides rather than teachers; expanding to about 50 campuses.
+        note_zh: 每天两小时由 AI 辅导的学科学习，成年人担任向导而非教师；正扩张到约 50 个校区。
+      - title: Alpha School’s own data
+        source: Fortune, on NYT reporting
+        url: https://fortune.com/2026/11/14/alpha-school-ai-students-tuition-learning-goals
+        kinds: [Critique]
+        date: "2026-11"
+        note: Internal figures reported by the NYT — 42% of students met the school’s 2× learning goal.
+        note_zh: 《纽约时报》披露的内部数据：只有 42% 的学生达到学校设定的 2 倍学习目标。
+
+  - id: "018"
+    slug: diagnosis
+    name: The Diagnosis
+    name_zh: 诊断
+    since_year: -1600
+    since: "c. 1600 BC"
+    origin: "in the Edwin Smith Papyrus"
+    origin_zh: "生于埃德温·史密斯纸草文稿"
+    status: alive
+    by: Models that out-diagnose doctors in studies
+    by_zh: 在研究中诊断胜过医生的模型
+    successor: Not yet the norm
+    successor_zh: 尚未成为主流
+    epitaph: Listened first, then examined.
+    epitaph_zh: 先倾听，再检查。
+    entries:
+      - title: Reasoning model vs. physicians on real ED cases
+        source: Science, via NPR
+        url: https://www.npr.org/2026/04/30/nx-s1-5804474/ai-doctors-openai-patient-care-diagnosis
+        kinds: [Demo]
+        date: "2026-04"
+        note: Harvard and Beth Israel researchers found an OpenAI reasoning model outperformed physicians on real emergency-department cases.
+        note_zh: 哈佛与贝斯以色列医院的研究发现，OpenAI 的推理模型在真实急诊病例上表现优于医生。
+      - title: MAI-DxO
+        source: Microsoft
+        url: https://singularityhub.com/2026/11/04/microsofts-medical-ai-is-over-twice-as-good-diagnosing-diseases-as-doctors/
+        kinds: [Demo]
+        date: "2026"
+        note: More than twice as accurate as generalist physicians on complex diagnostic cases.
+        note_zh: 在复杂诊断病例上，准确率是全科医生的两倍以上。
+      - title: DeepRare
+        source: Nature
+        url: https://thenextweb.com/news/how-an-ai-system-beat-experienced-doctors-at-diagnosing-rare-diseases
+        kinds: [Demo]
+        date: "2026"
+        note: An agentic system that beat experienced specialists at diagnosing rare diseases.
+        note_zh: 一个在罕见病诊断上胜过资深专科医生的智能体系统。
+
+  - id: "019"
+    slug: experiment
+    name: The Experiment
+    name_zh: 实验
+    since_year: 1660
+    since: "1660"
+    origin: "with Boyle’s air pump"
+    origin_zh: "随波义耳的空气泵而生"
+    status: alive
+    by: Self-driving labs that never sleep
+    by_zh: 从不休息的自动驾驶实验室
+    successor: Not yet the norm
+    successor_zh: 尚未成为主流
+    epitaph: Pipetted through the night, and went home at dawn.
+    epitaph_zh: 移液到深夜，天亮才回家。
+    entries:
+      - title: Self-driving labs — A-Lab, Eve, Argonne, PNNL
+        source: Scientific American
+        url: https://www.scientificamerican.com/article/autonomous-labs-are-running-science-experiments-24-7/
+        kinds: [Demo, Commentary]
+        date: "2026"
+        note: Closed-loop robotic labs run experiments around the clock; the results still have to be checked and interpreted by people.
+        note_zh: 闭环机器人实验室昼夜不停地做实验，但结果仍要由人来核查和解释。
+      - title: Rentosertib
+        source: Nature Medicine
+        url: https://pubmed.ncbi.nlm.nih.gov/40461817/
+        kinds: [Demo]
+        date: "2025-06"
+        note: Both the target and the molecule were found by AI; positive Phase 2a results in idiopathic pulmonary fibrosis.
+        note_zh: 靶点和分子都由 AI 发现，在特发性肺纤维化的 2a 期试验中取得积极结果。
+
+  - id: "020"
+    slug: judgment
+    name: The Judgment
+    name_zh: 判决
+    since_year: -1754
+    since: "c. 1754 BC"
+    origin: "with the Code of Hammurabi"
+    origin_zh: "随《汉谟拉比法典》而生"
+    status: alive
+    by: Courts piloting AI-drafted judgments
+    by_zh: 试点 AI 起草判决的法院
+    successor: Not yet the norm
+    successor_zh: 尚未成为主流
+    epitaph: Signed by a judge who had to answer for it.
+    epitaph_zh: 由一位要为它负责的法官签名。
+    entries:
+      - title: Keep Humans on the Bench
+        source: Daily Journal
+        url: https://dailyjournal.com/articles/393976-keep-humans-on-the-bench
+        kinds: [Critique]
+        date: "2026"
+        note: On L.A. County’s “Learned Hand” draft-ruling pilot, and similar drafts in Taiwan and Frankfurt.
+        note_zh: 评论洛杉矶县 “Learned Hand” 判决草稿试点，以及台湾、法兰克福的类似做法。
+
+elegies:
+  - title: Farewell, programming
+    source: André Staltz
+    url: https://staltz.com/farewell-programming
+    mourns: "007"
+    date: "2026"
+    note: 2026 is very likely the last year he writes code with his own hands.
+    note_zh: 2026 年很可能是他亲手写代码的最后一年。
+  - title: We mourn our craft
+    source: Nolan Lawson
+    url: https://nolanlawson.com/2026/02/07/we-mourn-our-craft/
+    mourns: "007"
+    date: "2026-02"
+  - title: The Last Human Milestone
+    url: https://cbcrenshaw.com/2026/05/07/the-last-human-milestone/
+    mourns: "007"
+    date: "2026-05"
+    note: The last point at which humans wrote every change that shipped.
+    note_zh: 人类写下所有上线改动的最后时刻。
+  - title: "The Last Human-Written Code: A Prediction Timeline"
+    url: https://medium.com/@coders.stop/the-last-human-written-code-a-prediction-timeline-5f15c3c6773e
+    mourns: "007"
+    date: "2026"
+  - title: The final human year — 2026
+    url: https://nofilk.substack.com/p/the-final-human-year-2026
+    mourns: "008"
+    date: "2026"
+
+ancestors:
+  - title: The Last One
+    url: https://hackernoon.com/programming-has-been-dying-since-1954-ai-might-finally-change-it
+    date: "1981"
+    note: A program generator sold as the last program you would ever need to buy. Programmers were not, in the end, replaced.
+    note_zh: 一款程序生成器，号称是你需要购买的最后一个程序。程序员最终并没有被取代。
+
+press_zh:
+  - title: AI原生格式，正在杀死PDF论文
+    source: 钛媒体
+    url: https://www.tmtpost.com/agent/ai-article?id=19677
+    about: "001"
+    note_zh: 介绍 The Last Human-Written Paper 与 ARA 协议：论文用传统格式预言了传统的终结。
+  - title: 未来的文章是写给谁看的？AI时代的知识生产困局
+    source: 虎嗅 / 生态学时空
+    url: https://www.huxiu.com/article/4873372.html
+    about: "001"
+    note_zh: 信息层的综述写作已失去交换价值，只有 AI 无法生成的判断与问题还值得写。

@@ -1,0 +1,4 @@
+fonttools>=4.40
+brotli>=1.0
+uharfbuzz>=0.37
+pyyaml>=6.0
